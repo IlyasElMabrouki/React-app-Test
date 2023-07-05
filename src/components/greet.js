@@ -1,7 +1,12 @@
 import React from 'react';
 
-function Greet(){
-    return <h1>Greet Ilyas El Mabrouki</h1>
+function Greet(props){
+    return (
+        <div>
+            <h1>Greet {props.name}</h1>
+            {props.children}
+        </div>
+    ) 
 }
 
 export default Greet
