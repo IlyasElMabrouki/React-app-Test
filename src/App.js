@@ -1,10 +1,12 @@
 import './App.css';
-import Counter from './Components/Counter';
+import Welcome from './Components/Welcome';
 
 function App() {
   return (
     <div className="App">
-      <Counter></Counter>
+      <Welcome name="ilyas">
+        <h1>VAMOS</h1>
+      </Welcome>
     </div>
   );
 }
