@@ -1,33 +1,17 @@
 import React, { Component } from 'react'
+import withCounter from './withCounter'
 
 class Counter extends Component {
-
-    constructor(props) {
-      super(props)
-    
-      this.state = {
-         count: 0
-      }
-    }
-
-    increment(){
-        this.setState({
-            count: this.state.count + 1
-        },
-        ()=>{
-            console.log(this.state.count);
-        })
-    }
-
     render() {
+        const {increment, count, name} = this.props;
         return (
-        <div>
-            <div>Count - {this.state.count}</div>
-            <button onClick={()=>this.increment()}>Increment</button>
-        </div>
+        <>
+            <h1>{name}</h1>
+            <button onClick={increment}>Clicked {count} times </button>
+        </>
         )
     }
 }
 
-export default Counter
+export default withCounter(Counter,5)
 

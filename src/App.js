@@ -1,10 +1,10 @@
 import './App.css';
-import Ref from './Components/Refs';
+import Counter from './Components/Counter';
 
 function App() {
   return (
     <div className="App">
-      <Ref></Ref>
+      <Counter name="ilyas"/>
     </div>
   );
 }
