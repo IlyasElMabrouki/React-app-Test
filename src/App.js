@@ -1,10 +1,13 @@
 import './App.css';
-import Counter from './Components/Counter';
+import ComponentA from './Components/ConponentA';
+import { UserProvider } from './Components/userContext'
 
 function App() {
   return (
     <div className="App">
-      <Counter name="ilyas"/>
+      <UserProvider value="ilyas">
+            <ComponentA></ComponentA>
+        </UserProvider>
     </div>
   );
 }
