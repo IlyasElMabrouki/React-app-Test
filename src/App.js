@@ -1,13 +1,10 @@
 import './App.css';
-import ComponentA from './Components/ConponentA';
-import { UserProvider } from './Components/userContext'
+import GetList from './Components/GetList'
 
 function App() {
   return (
     <div className="App">
-      <UserProvider value="ilyas">
-            <ComponentA></ComponentA>
-        </UserProvider>
+      <GetList />
     </div>
   );
 }
