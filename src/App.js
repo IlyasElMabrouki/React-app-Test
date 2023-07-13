@@ -1,10 +1,10 @@
 import './App.css';
-import PostList from './Components/PostList';
+import CounterHook from './Hooks/CounterHook';
 
 function App() {
   return (
     <div className="App">
-      <PostList/>
+      <CounterHook />
     </div>
   );
 }
