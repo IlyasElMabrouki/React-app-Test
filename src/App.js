@@ -1,10 +1,10 @@
 import './App.css';
-import GetList from './Components/GetList'
+import PostList from './Components/PostList';
 
 function App() {
   return (
     <div className="App">
-      <GetList />
+      <PostList/>
     </div>
   );
 }
