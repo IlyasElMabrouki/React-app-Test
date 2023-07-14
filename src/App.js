@@ -1,10 +1,10 @@
 import './App.css';
-import CounterHook from './Hooks/CounterHook';
+import MouseHook from './Hooks/MouseHook';
 
 function App() {
   return (
     <div className="App">
-      <CounterHook />
+      <MouseHook />
     </div>
   );
 }
