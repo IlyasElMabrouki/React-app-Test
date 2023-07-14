@@ -1,10 +1,10 @@
 import './App.css';
-import MouseHook from './Hooks/MouseHook';
+import DataFetching from './Components/DataFetching';
 
 function App() {
   return (
     <div className="App">
-      <MouseHook />
+      <DataFetching />
     </div>
   );
 }
